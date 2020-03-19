@@ -67,6 +67,17 @@ namespace Calculadora
             {
                 resultado = operando1 * operando2;
             }
+            
+
+            if (operacion == "º")
+            {
+                resultado = Math.Pow(operando1, operando2);
+            }
+            else if (operacion == "¬")
+            {
+                resultado = Math.Sqrt(operando1);
+            }
+
             label1.Text = Convert.ToString(resultado);
         }
 
@@ -77,6 +88,7 @@ namespace Calculadora
             if (radioButton2.Checked == true)
             {
                 this.BackColor = Color.FromArgb(34, 36, 49);
+
                 button1.BackColor = Color.Black;
                 button1.ForeColor = Color.White;
 
@@ -121,6 +133,15 @@ namespace Calculadora
 
                 button15.BackColor = Color.Black;
                 button15.ForeColor = Color.White;
+
+                button16.BackColor = Color.Black;
+                button16.ForeColor = Color.White;
+
+                button17.BackColor = Color.Black;
+                button17.ForeColor = Color.White;
+
+                radioButton1.ForeColor = Color.White;
+                radioButton2.ForeColor = Color.White;
             }
             else
             {
@@ -170,6 +191,15 @@ namespace Calculadora
 
                 button15.BackColor = Color.White;
                 button15.ForeColor = Color.Black;
+
+                button16.BackColor = Color.White;
+                button16.ForeColor = Color.Black;
+
+                button17.BackColor = Color.White;
+                button17.ForeColor = Color.Black;
+
+                radioButton1.ForeColor = Color.Black;
+                radioButton2.ForeColor = Color.Black;
             }
         }
 

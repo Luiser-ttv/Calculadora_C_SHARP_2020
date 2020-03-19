@@ -47,6 +47,8 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -209,7 +211,7 @@
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.Location = new System.Drawing.Point(333, 310);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(278, 92);
+            this.button14.Size = new System.Drawing.Size(138, 92);
             this.button14.TabIndex = 15;
             this.button14.Text = "/";
             this.button14.UseVisualStyleBackColor = true;
@@ -218,9 +220,9 @@
             // button15
             // 
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(333, 408);
+            this.button15.Location = new System.Drawing.Point(475, 310);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(278, 92);
+            this.button15.Size = new System.Drawing.Size(136, 92);
             this.button15.TabIndex = 16;
             this.button15.Text = "*";
             this.button15.UseVisualStyleBackColor = true;
@@ -250,11 +252,35 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // button16
+            // 
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Location = new System.Drawing.Point(333, 408);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(138, 92);
+            this.button16.TabIndex = 20;
+            this.button16.Text = "º";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button17
+            // 
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Location = new System.Drawing.Point(477, 408);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(134, 92);
+            this.button17.TabIndex = 21;
+            this.button17.Text = "¬";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button11_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 640);
+            this.ClientSize = new System.Drawing.Size(620, 615);
+            this.Controls.Add(this.button17);
+            this.Controls.Add(this.button16);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.button15);
@@ -302,6 +328,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
     }
 }
 
