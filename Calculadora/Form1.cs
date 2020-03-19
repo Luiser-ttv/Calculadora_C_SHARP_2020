@@ -78,6 +78,15 @@ namespace Calculadora
                 resultado = Math.Sqrt(operando1);
             }
 
+            if (operacion == "sen(x)")
+            {
+                resultado = Math.Sin(operando1);
+            }
+            else if (operacion == "cos(x)")
+            {
+                resultado = Math.Cos(operando1);
+            }
+
             label1.Text = Convert.ToString(resultado);
         }
 
@@ -140,6 +149,15 @@ namespace Calculadora
                 button17.BackColor = Color.Black;
                 button17.ForeColor = Color.White;
 
+                button18.BackColor = Color.Black;
+                button18.ForeColor = Color.White;
+
+                button19.BackColor = Color.Black;
+                button19.ForeColor = Color.White;
+
+                button20.BackColor = Color.Black;
+                button20.ForeColor = Color.White;
+
                 radioButton1.ForeColor = Color.White;
                 radioButton2.ForeColor = Color.White;
             }
@@ -198,6 +216,15 @@ namespace Calculadora
                 button17.BackColor = Color.White;
                 button17.ForeColor = Color.Black;
 
+                button18.BackColor = Color.White;
+                button18.ForeColor = Color.Black;
+
+                button19.BackColor = Color.White;
+                button19.ForeColor = Color.Black;
+
+                button20.BackColor = Color.White;
+                button20.ForeColor = Color.Black;
+
                 radioButton1.ForeColor = Color.Black;
                 radioButton2.ForeColor = Color.Black;
             }
@@ -205,6 +232,11 @@ namespace Calculadora
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         { 
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            label1.Text = "0";
         }
     }
 }
